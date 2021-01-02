@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+em - 지정된 font size가 1em임. 상대적인 수치이다.
+rem - 최상위에 지정된 font-size의 상대적인 수치이다. html에 지정된 사이즈 기준이 된다.
+
+*/
+html {
+  font-size: 62.5%;
+}
+
+#box1 {
+  font-size: 30px;
+  width: 25rem;
+  background-color: #aaa;
+}
+
+#box2 {
+  width: 25rem;
+  background-color: #777;
+}
+/*# sourceMappingURL=unit.css.map */

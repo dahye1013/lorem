@@ -1,0 +1,20 @@
+//px, em , rem , vw , vh
+/*
+em - 지정된 font size가 1em임. 상대적인 수치이다.
+rem - 최상위에 지정된 font-size의 상대적인 수치이다. html에 지정된 사이즈 기준이 된다.
+
+*/
+html {
+  //   font-size: 10px; //1rem = 10px
+  font-size: 62.5%;//default은 16px 이고, 62.5%는 10px임
+}
+#box1 {
+  font-size: 30px; //1em = 30px
+  width: 25rem;
+  background-color: #aaa;
+}
+#box2 {
+  width: 25rem;
+  background-color: #777;
+}
+  
