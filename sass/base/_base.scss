@@ -1,0 +1,21 @@
+//구글폰트 -- 나눔고딕, lato
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+// icon font - https://google.github.io/material-design-icons/#icon-font-for-the-web
+// 아이콘 sample 확인 주소 http://material.io/icons
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  // browser기본 폰트 사이즈는 16px
+  // 16px의 62.5% = 10px = 1rem
+}
+body {
+  padding: 3rem;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+}

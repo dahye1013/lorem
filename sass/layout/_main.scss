@@ -1,0 +1,50 @@
+main {
+  #section-about {
+    background-color: #ededed;
+    padding: 7rem 0 6.5rem 6rem;
+
+    @include clearFix();
+    &-words {
+      width: 65%;
+      float: left;
+      p {
+        padding: 1.5rem 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: justify;
+      }
+    }
+    &-photo {
+      width: 35%;
+      float: left;
+      .photo {
+        position: relative; //position은 relative로 잡아야 위치 조정할때 부모 기준으로 가능
+        width: 18rem;
+        height: 12rem;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+          padding: 1rem;
+          border: 3px solid $color-primary;
+          z-index: 10; //hover한 이미지가 올라오게 하기
+        }
+
+        &:nth-child(1) {
+          left: 1rem;
+          top: 3rem;
+        }
+        &:nth-child(2) {
+          left: 6rem;
+          // top: rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 3px 3px 9px 0px #000;
+        }
+      }
+    }
+  }
+  #section-etc {
+  }
+}

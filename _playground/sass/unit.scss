@@ -2,13 +2,21 @@
 /*
 em - 지정된 font size가 1em임. 상대적인 수치이다.
 rem - 최상위에 지정된 font-size의 상대적인 수치이다. html에 지정된 사이즈 기준이 된다.
-
+vm - viewport width
+vh - viewport height
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   //   font-size: 10px; //1rem = 10px
-  font-size: 62.5%;//default은 16px 이고, 62.5%는 10px임
+  font-size: 62.5%; //default은 16px 이고, 62.5%는 10px=1rem
 }
 #box1 {
+  width: 100%;
+  height: 90vh; //view port height
   font-size: 30px; //1em = 30px
   width: 25rem;
   background-color: #aaa;
@@ -17,4 +25,3 @@ html {
   width: 25rem;
   background-color: #777;
 }
-  

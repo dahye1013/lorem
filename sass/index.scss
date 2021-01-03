@@ -1,23 +1,11 @@
-//구글폰트 -- 나눔고딕, lato
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import "abstract/variables";
+@import "abstract/mixins";
 
-body {
-  font-family: "Lato", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
-}
-header {
-  width: 100%;
-  height: 100%;
-  background-color: #999;
-  #logo-text {
-  }
+@import "base/base";
+@import "base/animations";
+@import "base/typo";
+@import "components/button";
 
-  #header-text {
-    &-main {
-      font-size: 30px;
-    }
-    &-sub {
-      font-size: 20px;
-    }
-  }
-}
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";

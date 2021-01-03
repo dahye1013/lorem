@@ -1,0 +1,39 @@
+// transition
+.btn {
+  font-size: 30px;
+  text-decoration: none;
+  opacity: 1; //불투명인 기본상태
+  //   transition: font-size 5s; --5초 동안 폰트사이즈가 변화되게 한다.
+  transition: all 5s;
+
+  &:hover {
+    font-size: 50px;
+    text-decoration: underline;
+    opacity: 0.2; //투명도 20%
+  }
+}
+// animation
+@keyframes anim1 {
+  // 시간의 흐름에 해당하는 %를 나눠서 anim효과를 줄 수 있다.
+  0% {
+    opacity: 0.2;
+    transform: translate(100px, -30px);
+    //(x,y)위치에서 이동해오는 anim을 준다.
+    // **y의 경우 위가 음수, 아래가 양수임
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+#box1 {
+  animation-name: anim1; //실행할 애니메이션
+  animation-duration: 5s; //애니메이션 지속시간
+  //   animation-fill-mode: forwards; //애니메이션 마지막 상태로 고정
+  //   animation-fill-mode: backwards; //애니메이션 처음 상태로 고정 -- 주로 delay가 있을때 사용한다.
+  animation-fill-mode: both;
+  animation-iteration-count: 3; //애니메이션 실행 횟수
+  animation-delay: 3s; //애니메이션 시작 딜레이시간
+}
